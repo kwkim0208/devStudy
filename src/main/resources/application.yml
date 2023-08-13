@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username: sa
+    url: jdbc:h2:tcp://localhost/~/devStudy
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  devtools:
+    livereload:
+      enabled: true
+  web:
+    resources:
+      static-locations: file:/src/main/resources/static
+  thymeleaf:
+    cache: false
